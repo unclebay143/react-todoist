@@ -1,15 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const TodoList = (props) => {
   const { id, title, created_at, handleDelete, handleEditMode } = props;
   return (
     <div className='group flex justify-between py-3 px-2.5 rounded-lg hover:bg-slate-50'>
-      <a href={`/${id}`}>{title}</a>
+      <Link to={`/todo/${id}`}>{title}</Link>
       <section className='gap-3 hidden group-hover:flex'>
-        <button
-          // onclick="handleEditMode('${todo.id}')"
-          onClick={() => handleEditMode(id)}
-        >
+        <button onClick={() => handleEditMode(id)}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'

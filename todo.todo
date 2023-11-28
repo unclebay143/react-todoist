@@ -1,6 +1,2 @@
-- Index Page (all todos)
-- Preview page (dynamic route)
-- Utils
-
-DOM access - state
-- document.querySelector("#form-message");
+1. Todo dashboard (/)
+2. View todo page (dynamic /todo/:id)
