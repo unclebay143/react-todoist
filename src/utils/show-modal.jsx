@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-export const showConfirmModal = ({
+export const showConfirmModal = async ({
   title,
   text,
   icon,
@@ -8,17 +8,16 @@ export const showConfirmModal = ({
   showCancelButton = false,
   cb,
 }) => {
-  return Swal.fire({
+  const res = await Swal.fire({
     title,
     text,
     icon,
     confirmButtonText,
     showCancelButton,
-  }).then((res) => {
-    if (res.isConfirmed) {
-      if (cb) {
-        cb();
-      }
-    }
   });
+  if (res.isConfirmed) {
+    if (cb) {
+      cb();
+    }
+  }
 };
