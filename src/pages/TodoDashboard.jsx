@@ -136,7 +136,9 @@ function TodoDashboard() {
   return (
     <div>
       <header className='px-5 py-4 max-w-lg mx-auto'>
-        <h1 className='text-4xl text-slate-700 font-medium'>Todoist App</h1>
+        <h1 className='text-4xl text-slate-700 font-medium'>
+          Todoist App (New version)
+        </h1>
       </header>
       <main className='px-5 mt-5 max-w-lg mx-auto'>
         <form className='flex flex-col items-center sm:flex-row gap-2'>
