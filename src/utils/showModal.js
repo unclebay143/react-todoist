@@ -8,7 +8,7 @@ export const showConfirmModal = ({
   showCancelButton = false,
   cb,
 }) => {
-  Swal.fire({
+  return Swal.fire({
     title,
     text,
     icon,
